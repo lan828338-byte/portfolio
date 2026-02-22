@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ran | Designer Portfolio</title>
+  <meta charset="UTF-8">
+  <!-- とりあえず参考サイトと同じview portを設定 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Ran Suzuki | デザイナーのポートフォリオ">
+  <link rel="stylesheet" href="style.css">
+  <!-- ここでGoogle Fontsを読み込みます -->
+   <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ヘッダー -->
+   <header>
+    <!-- ロゴ -->
+     <!-- PC用ナビゲーション -->
+     
+     <nav id="nav-pc">
+      <div class="nav-box">
+        <h1 class="logo">
+    <a href="index.html" id="logo">
+      <span class="text-small">web designer</span>
+      <br>
+      "Ran Suzuki"
+     </a>
+        </h1>
+        <ul class="pc-nav">
+        <li class="pc-nav">
+          <a href="index.html#service">SERVICE</a>
+        </li>
+        <li class="pc-nav">
+          <a href="about.html">ABOUT</a>
+        </li>
+        <li class="pc-nav">
+          <a href="works.html">Works</a>
+        </li>
+        <li class="pc-nav">
+          <a href="contact.html">CONTACT</a>
+          <img src="images/header-contact.jpg" class="header-contact">
+        </li> 
+      </ul>
+      </div>
+     </nav>
+
+<!-- 　スマホ用メニューボタン -->
+ <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display='block'">
+  <img src="images/Hamburger.jpg" alt="ナビゲーションを開く">
+  
+ </button>
+<!-- スマホ用ナビゲーション -->
+<div id="nav-sp">
+  <button id="close" onclick="document.getElementById('nav-sp').style.display='none'">
+    <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+  </button>
+
+  <nav>
+    <ul>
+      <li><a class="menu" href="index.html" onclick="document.getElementById('nav-sp').style.display='none'">top</a></li>
+      <li><a class="menu" href="about.html" onclick="document.getElementById('nav-sp').style.display='none'">about</a></li>
+      <li><a class="menu" href="works.html" onclick="document.getElementById('nav-sp').style.display='none'">works</a></li>
+      <li><a class="menu" href="contact.html" onclick="document.getElementByid('nav-sp').style.display='none'">contact</a></li>
+    </ul>
+  </nav>
+  <div id="sns">
+    <a href="https://x.com/luna16956777407">
+      <img src="images/twitter.jpg" alt="Twitterのリンク">
+    </a>
+    <a href="">
+      <!-- ↑まだ、インスタグラムのリンク未入力 -->
+      <img src="images/instagram.jpg" alt="instagramのリンク">
+    </a>
+  </div>
+</div>
+   </header>
+   <!-- ヘッダー終わり -->
+<!-- ここからtopMain -->
+ <section id="topMain">
+  <div class="wrapper">
+ <img src="images/portfolio.png" alt="メインビジュアル、portfolioの文字画像" alt="portfolio">
+  </div>
+ </section>
+
+  
+<!-- serviceボタンのスクロール先（service)のセクション -->
+<section id="service">
+<div class="wrapper">
+  
+  <div class="service-flexAll">
+  <div class="service-left">
+<img src="images/curve.png" class="curve">
+<img src="images/vase.png" alt="花瓶の写真" class="vase-image">
+</div>
+<div class="service-right">
+<p class="english-service-message">
+  <span class="text-big">D</span>
+  <span class="decoration">esigns that cherish our clients’ vision and feelings.</span>
+</p>
+<p class="sevice-message">お客様の想いと世界観を大切にするデザインを。</p>
+</div>
+
+</div>
+
+
+</div>
+</section>
+<!-- ここまでがtopページ-serviceセクション -->
+ <!-- ここからがtopページ-aboutセクション -->
+ <section id="top-about">
+  <div class="wrapper">
+    <h2 class="title">about</h2>
+    <div class="topAbout-flexAll">
+     <div class="topAbout-left">
+       <p class="about-description">神奈川県出身の25歳
+        <br>
+         大学を卒業後、不動産で事務職に従事
+         <br>
+         <br>
+         作り手の感性や個性によりいかようにも変わるデザインやそ
+         <br>
+         ういったものを生み出し、人々の心を動かすデザイナーの仕
+         <br>
+         事に惹かれwebデザイナーを目指すことを決意。3カ月間ス
+         <br>
+         クールでデザインやコーディングについて学び、現在は転職
+         <br>
+         活動をしています。
+       </p>
+     </div>
+     <div class="topAbout-right">
+      <img src="images/profile.jpg" alt="プロフォール写真" class="topAbout-profile">
+      <img src="images/candle.png" alt="キャンドルの写真" class="candle">
+     </div>
+    </div>
+  </section>
+
+ <!-- ここからがtopページ-worksセクション -->
+  <section id="top-about">
+  <div class="wrapper">
+    <h2 class="title-top-works">works</h2>
+    <div class="topWorks-flexAll">
+    <!-- 3列横並び -->
+     <div class="topWorks-flexAll-inner">
+      <a href="works1.html">
+        <img src="images/corporate.jpg" width="328px" height="328px" alt="IT会社のコーポレートサイト(架空）">
+      </a>
+       </div>
+      <div class="topWorks-flexAll-inner">
+        <a href="works2.html">
+          <img src="images/corporate.jpg" width="328px" height="328px" alt="I美容室のHP(架空）">
+        </a>
+     </div>
+     <div class="topWorks-flexAll-inner">
+      <a href="works3.html">
+        <img src="images/corporate.jpg" width="328px" height="328px" alt=""大学サイト(架空）>
+      </a>
+       </div>
+       <div class="topWorks-flexAll-inner">
+      <a href="works4.html">
+        <img src="images/corporate.jpg" width="328px" height="328px" alt="IT会社のコーポレートサイト(架空）">
+      </a>
+       </div>
+       <div class="topWorks-flexAll-inner">
+      <a href="works5.html">
+        <img src="images/corporate.jpg" width="328px" height="328px" alt="IT会社のコーポレートサイト(架空）">
+      </a>
+       </div>
+       <div class="topWorks-flexAll-inner">
+      <a href="works6.html">
+        <img src="images/corporate.jpg" width="328px" height="328px" alt="IT会社のコーポレートサイト(架空）">
+      </a>
+    </div>
+    </div>
+    <!-- flex終わり -->
+     <a href="works.html" class="view-more">
+      view more
+     </a>
+     </div>
+  </div>
+ </section>
+ <!-- ここからtopページcontactセクション -->
+  <section id="contact">
+    <div class="wrapper">
+      <img src="images/dried flowers.png" alt="壁にかかっているドライフラワーの画像" class="dried-flowers">
+      <h2 class="title-contact">contact</h2>
+      <p class="top-contact">お仕事のご相談やご依頼など、お気軽にご連絡ください！</p>
+      <a class="contact-btn" href="contact.html" target="brank">
+      お問い合わせページへ
+      </a>
+      <img src="images/Vector 11.png" alt="">
+    </div>
+  </section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
