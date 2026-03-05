@@ -1,0 +1,914 @@
+/* PC、スマホ共通スタイル */
+/* topページのcss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  "petemoss", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝", "MS Mincho", serif;
+  color: #665A5A;
+}
+
+p {
+  font-size:16px;
+  letter-spacing: 0.08em;
+  line-height: 1.7;
+}
+
+/* パソコンのコーディング */
+/* ここからがtopページのcss */
+#nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 200;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  max-width:  1080px;
+  height: 120px;
+  padding: 20px;
+  margin: 0 auto;
+
+}
+
+
+.nav-box li {
+  width: 128px;
+  height: 48px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+    position: relative;
+   z-index: 20;
+   
+}
+
+
+
+/* リンクホバー時などの色の設定、リンク前の箇条書きの点を削除する設定 */
+a:link, a:visited, a:hover, a:active {
+  color: #665A5A;
+  text-decoration: none;
+  
+}
+
+.nav-box ul {
+  display: flex;
+  align-items: center;
+   list-style: none; 
+}
+
+.nav-box li a {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  height: 50px;
+  margin: 0 1.3rem;
+  letter-spacing: 0.12rem;
+  line-height: 50px;
+ 
+}
+
+#gnav {
+  position: fixed;
+  top: 1rem;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  z-index: 90;
+}
+
+
+.pc-nav {
+  position: relative;
+  z-index: 20;
+}
+
+.text-small {
+  font-size: 40px;
+}
+.text-medium {
+  font-size: 48px;
+}
+#logo {
+ display: flex;
+ flex-direction: column;
+}
+
+/* ここからがメインビジュアルセクションのcss */
+.topMain-contents {
+  position: relative;
+  max-width:1080px;
+  height: 550px;
+  background-image: url(images/pc-mv.png);
+  background-repeat: no-repeat;
+}
+
+
+
+
+.main-visual {
+  width: 100%;
+  height: 525px;
+}
+
+/* ここからがtopページ-serviceセクションのcss */
+#service {
+  width: 100%;
+  background: #F2E2E2;
+}
+
+.text-big {
+  font-size: 60px;
+  color:#665A5A;
+  
+}
+
+.decoration {
+  font-size: 40px;
+  color:#665A5A;
+  
+}
+
+.service-message {
+  font-size: 20px;
+  position: relative;
+  z-index: 30;
+}
+.english-service-message {
+  margin-bottom: 40px;
+  position: relative;
+  right: 40px;
+}
+.service-flexAll {
+  display: flex;
+  align-items: center;
+  background-image: url("images/curve.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.service-left {
+  position: relative;
+}
+
+.service-right {
+  margin-left: auto;
+  margin-right: 80px;
+}
+.vase-image {
+  width: 400px;
+  height: 536px;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  position: absolute;
+  top: 0;
+  z-index: 30;
+}
+.curve {
+  position: relative;
+  z-index: 10;
+  padding-top: 240px;
+}
+.vase-image {
+  width: 400px;
+  height: 700px;
+  position: relative;
+  z-index: 20;
+}
+.english-service-message {
+  position: relative;
+  z-index: 30px;
+}
+
+
+
+/* topページ-aboutセクションのcss */
+
+#top-about {
+ padding-bottom: 104px;
+}
+
+.topAbout-flexAll {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.topAbout-profile {
+  width: 248px;
+  height: 248px;
+  display: block;
+}
+.topAbout-right {
+  position: relative;  
+  width: 350px;        
+}
+
+.topAbout-candle {
+  position: absolute;
+  bottom: -80px;  
+  right: -20px;
+  width: 272px;     /* 少し小さくする */
+  height: 184px;
+}
+.about-description {
+  font-family: "ヒラギノ明朝 ProN";
+}
+/* topページ-worksセクションのcss */
+.title-top-works {
+  font-size: 80px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+
+.topWorks-flexAll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+
+.topWorks-flexAll-inner {
+  position: relative;
+  width: 32%;
+  margin-bottom: 18px;
+  /* ↑とりあえず参考サイトを真似てwidth,margin-bottomの数値を設定、後で自分のサイトのサイズに直す */
+}
+.logo {
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+}
+.view-more {
+  margin: 0 auto;
+  display: block;
+  width: 248px;
+  height: 48px;
+  border: 1px solid #665A5A;
+  text-align: center;
+  font-size: 32px;
+  background: #F2E2E2;
+  padding-left: 0;
+  line-height: 50px;
+  /* とりあえず参考サイトを真似て設定、transitionは未設定 */
+  
+}
+.view-more-about {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+.view-more-btn {
+  font-size: 32px;
+}
+
+
+/* topページ-contactセクションのcss */
+.top-contact {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.contact-btn {
+  margin: 0 auto;
+  display: block;
+  width: 248px;
+  height: 48px;
+  border: 1px solid #665A5A;
+  text-align: center;
+  background: #F2E2E2;
+  line-height: 50px;
+  margin-bottom: 100px;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+  /* line-height,transition,text-decorationは参考サイトをそのまま持ってきたので特に変えてない */
+}
+.dried-flowers{
+  margin: 0 auto;
+}
+
+.title-contact {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 80px;
+  font-weight: normal;
+  
+}
+
+.vector11 {
+  width: 100%;
+  z-index: 20;
+  
+  
+}
+.image-wrapper {
+  position: relative;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;          /* 下にくっつける */
+  left: 50%;          /* 真ん中基準 */
+  transform: translateX(-50%);
+  font-family: "ヒラギノ明朝 ProN";
+}
+
+/* aboutページ、aboutセクションのcss */
+#profile {
+  padding-bottom: 80px;
+}
+
+.wrapper {
+  padding:0 24px;
+  width: 1920px;
+  max-width: 1080px;
+  margin: 0 auto;
+ 
+}
+
+.image-profile {
+  width:248px;
+  height:336px;
+}
+
+.profile-flexAll {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  display: block;
+}
+
+#profile {
+  padding-bottom: 40px;
+}
+
+/* aboutページ、skillsセクションのcss */
+#skills {
+  padding-top: 0;
+  padding-bottom: 104px;
+  width: 100%;
+  background: #F2E2E2;
+
+}
+
+h4 {
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 24px;
+  font-weight: normal;
+
+  /* まだ参考サイトのようにfont-faamily,letter-spacing,line-height未入力 */
+}
+
+
+.title {
+  font-size: 80px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 72px;
+
+  
+  /* まだ参考サイトのようにletter-spacing,line-height,margin-bottom,font-family未入力 */
+}
+.skills-title {
+  text-indent: 24px;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+  font-size: 24px;
+}
+
+
+.skills-text {
+  padding-left: 32px;
+  margin-bottom: 16px;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+  /* まだお手本サイトのようにletter-spacing,line-height未設定 */
+}
+
+.skills-text1 {
+  text-indent: 48px;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+}
+
+
+
+.skills-title .margin-right {
+   margin-right: 15px;
+}
+
+/* ここからがworksページのcss */
+
+.works-corporate {
+  width: 648px;
+  height:648px;
+  margin-left:155px;
+  margin-right: 155px;
+  
+  
+}
+
+.works-page-images {
+  width: 648px;
+  height: 648px;
+}
+
+.title-sub {
+  padding-top: 24px;
+  padding-bottom: 184px;
+  font-family: "ヒラギノ明朝 ProN""Hiragino Mincho ProN", "MS 明朝";
+  margin: 0;
+}
+
+
+h3 {
+  font-family: 'Unna', serif;;
+  font-size: 30px;
+  letter-spacing: 3rem;
+  line-height: 1;
+  font-weight: normal;
+  border-left: 15px;
+  padding-right: 10px;
+  float: left;
+  margin-bottom: 184px;
+  /* とりあえず参考サイトと同じように設定 */
+}
+/* ここからがworks1ページのcss */
+#works1 {
+  padding-bottom: 80px;
+}
+
+.works1-title {
+  text-align: left;
+  margin-top: 104px;
+  margin-bottom: 72px;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+  /* まだ参考サイトのようにletter-spacing,line-height,font-family未設定 */
+}
+
+.works1-image {
+  width: 648px;
+  height: 648px;
+}
+
+dl.works1page-summary {
+  display: block;
+  flex-wrap: wrap;
+  margin: 104px 0 80px;
+ 
+}
+
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+dt.works-list {
+  display: block;
+  float: left;
+  width: 160px;
+  color: #BF8181;
+/* ↑worksそれぞれのページの小見出しの色まだ保留中！！！！！！！！！！！！！！！！！！！ */
+  font-weight:500
+}
+dd.works-text {
+  width: 610px;
+  margin-bottom: 32px;
+  vertical-align: baseline;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+}
+
+dt.works-list::after {
+  content: '';
+}
+
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+#nav-sp {
+  display: none; /* 初期非表示 */
+}
+#menu-sp {
+  display: none;
+}
+
+/* スマホ用ナビを非表示 */
+#nav-sp,
+#menu-sp {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*=============================
+スマートフォン用のスタイル
+=============================*/
+@media screen and (max-width:390px){
+  /* PC用ナビゲーション非表示 */
+  #nav-pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    display: block;
+    background-color: transparent;
+    float: right;
+    padding: 0;
+    border: none;
+  }
+
+  /* スマホ用ナビゲーションの表示切替 */
+  /* 初期状態、レイアウトと非表示設定 */
+#nav-sp {
+  background-color: #F2E2E2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
+
+/* ×ボタン */
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+#nav-sp nav ul {
+  padding-left: 0;
+}
+
+#nav-sp nav li {
+  list-style: none;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-sp nav a {
+  display: block;
+  color: #665A5A;
+}
+
+#nav-sp nav a:hover {
+  text-decoration: none;
+}
+
+#nav-sp .menu {
+  text-decoration: none;
+  margin: 0 20px 0 20px;
+  height: 44px;
+  font-size: 40px;
+  
+}
+.grobal-nav__item {
+  text-align: center;
+  font-size: 16px;
+}
+
+.gloal-nav__item-sns {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  
+}
+
+.grobal-nav__item {
+  display: block;
+  padding: 20px 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+img {
+  
+  margin-left: 0 auto;
+  
+}
+#sns {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+}
+
+#sns > a {
+  margin-right: 30px;
+}
+
+p {
+  font-size:15px;
+  letter-spacing: 0.06em;
+  line-height: 1.55;
+}
+/* スマホ版メインビジュアルセクションのcss */
+
+.topMain-contents {
+  position: relative;
+  max-width:1080px;
+  height: 520px;
+  background-image: url(images/sp-mv.png);
+  background-repeat: no-repeat;
+}
+.wrapper {
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+
+/* スマホ版topページserviceセクションのcss */
+#service {
+  width: 100%;
+  height: 602px;
+  background: #F2E2E2;
+}
+
+.service-left {
+  align-self: center;
+}
+
+.service-right {
+  margin-left: 0;
+  margin-right: 0;
+}
+.text-big {
+ font-size: 28px;
+ color: #665A5A;
+ padding-top: 88px;
+ padding-bottom: 40px;
+ 
+ 
+}
+.decoration {
+  font-size: 14px;
+  color: #665A5A;
+  
+  
+}
+
+.sevice-message {
+  padding-top: 120px;
+}
+#service {
+  width: 100%;
+  background-color: #F2E2E2;
+}
+.flower-image {
+  width: 200px;
+  height: 200px;
+  padding-top: 224px;
+  padding-bottom: 72px;
+}
+.topAbout-profile {
+  width: 112px;
+  height: 112px;
+  margin-left: 40px;
+  margin-bottom: 100px;
+}
+
+h2.title {
+  font-size: 56px;
+  font-weight: normal;
+  padding-top: 64px;
+  text-align: left;
+  margin-bottom: 40px;
+  /* まだ参考サイトのようにletter-spacing,line-height,margin-bottom,font-family未入力 */
+}
+
+
+
+
+.vase-image {
+  width: 208px;
+  height: 344px;
+  padding-top: 0;
+  padding-bottom: 64px;
+  position: static;
+  top: 0;
+  margin-left: -40px;
+  
+}
+
+.service-flexAll {
+  display: flex;
+  background-image: url("images/curve.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  flex-direction: column-reverse;
+}
+
+/* スマホ版topページaboutセクションのcss */
+
+.topAbout-right {
+  width: 350px;        
+}
+
+#top-about {
+ padding-bottom: 64px;
+}
+/* スマホ版topページ、worksセクションのcss */
+.topWorks-flexAll {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+
+.text-big {
+  font-size: 56px;
+  color:#665A5A;
+  
+}
+
+.decoration {
+  font-size: 48px;
+  color:#665A5A;
+  
+}
+
+.service-message {
+  font-size: 20px;
+  position: relative;
+  margin: 0;
+}
+.english-service-message {
+  margin-top: 64px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  right: 40px;
+  text-align: center;
+
+}
+
+
+/* スマホ版topページ、worksセクションのcss */
+.title-top-works {
+  font-size: 56px;
+  font-weight: normal;
+  text-align: left;
+   margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.topAbout-flexAll {
+  flex-direction: column-reverse;
+  
+}
+
+/* topページcontactセクションのcss */
+
+.title-contact {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 80px;
+  font-weight: normal;
+  
+}
+.dried-flowers {
+  width: 342px;
+  height:150px;
+}
+.contact-btn {
+  margin: 0 auto;
+  display: block;
+  width: 248px;
+  height: 48px;
+  border: 1px solid #665A5A;
+  text-align: center;
+  background: #F2E2E2;
+  line-height: 50px;
+  margin-bottom: 100px;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+}
+
+/* スマホ版aboutページaboutセクションのcss */
+
+.image-profile {
+  width:224px;
+  height:272px;
+  
+}
+
+.topAbout-candle {
+  position: static;
+  width: 144px;     /* 少し小さくする */
+  height: 112px;
+  margin-bottom: 35px;
+  margin-left: 70px;
+  position: absolute;
+  left:  50px;
+  top: 60px;
+}
+
+
+.about-description {
+  font-family: "ヒラギノ明朝 ProN";
+  margin: 0;
+}
+
+.profile-image-l {
+  align-self: center;
+ margin-bottom: 30px;}
+
+/* スマホ版aboutページ、skillsセクションのcss */
+#skills {
+  padding-top: 0;
+  padding-bottom: 64px;
+  width: 100%;
+  background: #F2E2E2;
+
+
+}
+.profile-flexAll {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+h4 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  
+  /* まだ参考サイトのようにfont-faamily,letter-spacing,line-height未入力 */
+}
+
+
+
+/* スマホ版worksページのcss */
+.title-sub {
+  padding-top: 8px;
+  padding-bottom: 144px;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+  margin: 0;
+  /* ワークフレームとは異なりpadding-bottomを144pxに設定あとでワイヤーフレーム直す */
+}
+
+.works-page-images {
+  width: 336px;
+  height: 336px;
+}
+
+
+/* ワークス1ページのcss */
+.works1-image {
+  width: 336px;
+  height: 336px;
+}
+
+.works1-title {
+  text-align: left;
+  margin-top: 64px;
+  margin-bottom: 72px;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+  /* まだ参考サイトのようにletter-spacing,line-height,font-family未設定 */
+}
+
+dt.works-list {
+  display: block;
+  float: left;
+  width: 88px;
+  color: #BF8181;
+/* ↑worksそれぞれのページの小見出しの色まだ保留中！！！！！！！！！！！！！！！！！！！ */
+  font-weight:500
+}
+dd.works-text {
+  width: 256px;
+  margin-bottom: 30px;
+  vertical-align: baseline;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS 明朝";
+}
+}
